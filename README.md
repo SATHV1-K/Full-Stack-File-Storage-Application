@@ -9,8 +9,9 @@ This project demonstrates a real-world workflow for building and deploying a clo
 `[Screenshot of the upload interface]`
 <img width="1369" height="718" alt="Screenshot 2025-07-11 224101" src="https://github.com/user-attachments/assets/6c0a615e-676e-4a24-ba6c-e92b29bbf66e" />
 
-`[Screenshot of the file library]`
+`[Screenshot of file library]`
 <img width="1318" height="525" alt="Screenshot 2025-07-11 224113" src="https://github.com/user-attachments/assets/3c54ae62-406a-4285-ae73-028028f9c9b3" />
+
 ---
 
 ## ✨ Core Features
