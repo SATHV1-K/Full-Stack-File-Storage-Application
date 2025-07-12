@@ -1,0 +1,10 @@
+# This is an example environment file.
+# For local development, create a .env.local file in this same directory
+# and copy the contents of this file into it, then fill in the values.
+
+# The URL for the Spring Boot backend server
+VITE_API_BACKEND_URL=http://localhost:8080
+
+# The URL for the file lookup API Gateway endpoint.
+# You can find this value in the output of the 'terraform apply' command.
+VITE_API_LOOKUP_URL=YOUR_API_GATEWAY_LOOKUP_URL_HERE 

@@ -1,0 +1,250 @@
+.lookup-container {
+    width: 100%;
+    max-width: 80rem;
+    margin: 0 auto;
+}
+
+.lookup-card {
+    background-color: white;
+    border-radius: 1.5rem;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    border: 1px solid #e5e7eb;
+    overflow: hidden;
+}
+
+.lookup-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    background: linear-gradient(to right, #5b21b6, #9d174d);
+    padding: 1.5rem 2rem;
+    color: white;
+}
+
+.lookup-header-info {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.lookup-header-icon-wrapper {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 0.75rem;
+    padding: 0.5rem;
+}
+
+.lookup-header-icon {
+    width: 2rem;
+    height: 2rem;
+}
+
+.lookup-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.lookup-subtitle {
+    font-size: 0.875rem;
+    color: #f3e8ff;
+}
+
+.lookup-header-stats {
+    text-align: right;
+}
+
+.lookup-stats-count {
+    font-weight: 600;
+}
+
+.lookup-stats-label {
+    font-size: 0.875rem;
+    color: #f3e8ff;
+}
+
+.lookup-filters {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 2rem;
+    background-color: #f9fafb;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.filter-label {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #374151;
+}
+
+.filter-select, .filter-button {
+    padding: 0.5rem 0.75rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.5rem;
+    font-size: 0.875rem;
+    background-color: white;
+}
+
+.filter-select:focus, .filter-button:focus {
+    outline: 2px solid #4f46e5;
+    outline-offset: 2px;
+}
+
+.filter-button {
+    cursor: pointer;
+}
+
+.lookup-content {
+    padding: 2rem;
+}
+
+/* Message States */
+.message-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 3rem 0;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.loading-spinner-large {
+    width: 3rem;
+    height: 3rem;
+    border: 4px solid #e5e7eb;
+    border-top-color: #4f46e5;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-bottom: 1rem;
+}
+
+.message-icon-wrapper {
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f3f4f6;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.message-icon-wrapper.error {
+    background-color: #fee2e2;
+}
+
+.message-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    color: #6b7280;
+}
+
+.message-icon-wrapper.error .message-icon {
+    color: #ef4444;
+}
+
+.message-title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 0.25rem;
+}
+
+.message-text {
+    color: #6b7280;
+}
+
+/* File List */
+.file-list {
+    display: grid;
+    gap: 1rem;
+}
+
+.file-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem;
+    background-color: #f9fafb;
+    border-radius: 1rem;
+    transition: background-color 0.2s;
+}
+
+.file-item:hover {
+    background-color: #f3f4f6;
+}
+
+.file-item-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.file-item-icon {
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.file-item-icon-svg {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.file-item-icon.pdf { background-color: #fee2e2; color: #ef4444; }
+.file-item-icon.jpg, .file-item-icon.jpeg, .file-item-icon.png, .file-item-icon.gif { background-color: #dcfce7; color: #22c55e; }
+.file-item-icon.doc, .file-item-icon.docx { background-color: #dbeafe; color: #3b82f6; }
+/* default icon color */
+.file-item-icon { background-color: #e5e7eb; color: #4b5563; }
+
+
+.file-item-name {
+    font-weight: 600;
+    color: #111827;
+}
+
+.file-item-meta {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 0.875rem;
+    color: #6b7280;
+    margin-top: 0.25rem;
+}
+
+.view-file-button {
+    padding: 0.5rem 1rem;
+    background-color: #4f46e5;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.view-file-button:hover {
+    background-color: #4338ca;
+}
+
+.delete-file-button {
+    padding: 0.5rem 1rem;
+    background-color: #fee2e2;
+    color: #ef4444;
+    border: none;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.delete-file-button:hover {
+    background-color: #fecaca;
+    color: #dc2626;
+} 

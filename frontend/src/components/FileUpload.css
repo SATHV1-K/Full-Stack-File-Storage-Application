@@ -1,0 +1,266 @@
+.upload-container {
+  width: 100%;
+  max-width: 48rem;
+  margin: 0 auto;
+}
+
+.upload-card {
+  background-color: white;
+  border-radius: 1.5rem;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  border: 1px solid #e5e7eb;
+  overflow: hidden;
+}
+
+.upload-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: linear-gradient(to right, #4338ca, #6d28d9);
+  padding: 1.5rem 2rem;
+  color: white;
+}
+
+.upload-header-icon-wrapper {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 0.75rem;
+  padding: 0.5rem;
+}
+
+.upload-header-icon {
+  width: 2rem;
+  height: 2rem;
+}
+
+.upload-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.upload-subtitle {
+  font-size: 0.875rem;
+  color: #c7d2fe;
+}
+
+.upload-content {
+  padding: 2rem;
+}
+
+.upload-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Drop Zone */
+.file-drop-zone {
+  position: relative;
+  border: 2px dashed #d1d5db;
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+}
+
+.file-drop-zone:hover {
+  border-color: #60a5fa;
+  background-color: #f9fafb;
+}
+
+.file-drop-zone.drag-over {
+  border-color: #3b82f6;
+  background-color: #eff6ff;
+}
+
+.file-drop-zone.has-file {
+  border-color: #34d399;
+  background-color: #f0fdf4;
+}
+
+.drop-zone-prompt, .file-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.file-icon-wrapper {
+  padding: 0.75rem;
+  background-color: #f3f4f6;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.file-icon-wrapper.success {
+  background-color: #d1fae5;
+}
+
+.file-icon {
+  width: 2rem;
+  height: 2rem;
+  color: #6b7280;
+}
+
+.file-icon-wrapper.success .file-icon {
+  color: #059669;
+}
+
+.drop-zone-text-lg {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.drop-zone-text-sm {
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin-top: 0.25rem;
+}
+
+.browse-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #4f46e5;
+  color: white;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  font-weight: 500;
+}
+
+.browse-button:hover {
+  background-color: #4338ca;
+}
+
+.browse-button-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+
+/* File Info */
+.file-name {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.file-size {
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+.file-remove-button {
+  font-size: 0.875rem;
+  color: #ef4444;
+  font-weight: 500;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.file-remove-button:hover {
+  text-decoration: underline;
+  color: #dc2626;
+}
+
+/* Status Message */
+.status-message {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  border: 1px solid;
+  background-color: #eff6ff;
+  border-color: #bfdbfe;
+  color: #1e40af;
+}
+
+.status-message.error {
+  background-color: #fee2e2;
+  border-color: #fecaca;
+  color: #991b1b;
+}
+
+.status-message.success {
+  background-color: #dcfce7;
+  border-color: #bbf7d0;
+  color: #166534;
+}
+
+.status-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-right: 0.75rem;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.status-icon.loading {
+  animation: spin 1s linear infinite;
+}
+
+.status-text {
+  font-weight: 500;
+}
+
+/* Upload Button */
+.upload-button {
+  width: 100%;
+  padding: 1rem 1.5rem;
+  border-radius: 0.75rem;
+  font-weight: 600;
+  color: white;
+  transition: all 0.2s ease-in-out;
+  background: linear-gradient(to right, #4f46e5, #6d28d9);
+  border: none;
+  cursor: pointer;
+}
+
+.upload-button:hover {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  transform: scale(1.02);
+}
+
+.upload-button:active {
+  transform: scale(0.98);
+}
+
+.upload-button:disabled {
+  background: #d1d5db;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.loading-indicator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.loading-spinner {
+  width: 1.25rem;
+  height: 1.25rem;
+  animation: spin 1s linear infinite;
+} 
